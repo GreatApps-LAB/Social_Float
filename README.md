@@ -1,13 +1,13 @@
 # **GreatPages Whatsapp Float**
 
-<img src="https://user-images.githubusercontent.com/99222756/207317647-1c517d05-a17f-4f25-bbf5-33cbb236e85e.jpg" width="100%"/><br>
+<img src="https://user-images.githubusercontent.com/99222756/210368404-216273fb-c930-453e-b32b-e3614872eba3.png" width="100%"/><br>
 
 ## **Configurações**
 O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plataforma Greatpages. Copie e cole no menu de configurações da página `Javascript & CSS` 
 
 <br>
 
-<a href="https://www.buymeacoffee.com/claitonllemes"><img src="https://user-images.githubusercontent.com/99222756/210364543-7c8abf79-bd15-4430-ac42-c5e3d7589570.png" width="100%"/></a><br>
+<a href="https://www.buymeacoffee.com/claitonllemes"><img src="https://user-images.githubusercontent.com/99222756/210368478-7f39d25f-f7e5-4f25-85d3-87f59998de42.png" width="100%" target='_blank'/></a><br>
 
 ```Html
 <!-- Whatsapp Float for Greatpages v. 1.6.3 - Ⓒ Copyright 2022 Claiton Lemes. -->
