@@ -7,6 +7,8 @@ O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plata
 
 <br>
 
+<a href="https://www.buymeacoffee.com/claitonllemes"><img src="https://user-images.githubusercontent.com/99222756/210364543-7c8abf79-bd15-4430-ac42-c5e3d7589570.png" width="100%"/></a><br>
+
 ```Html
 <!-- Whatsapp Float for Greatpages v. 1.6.3 - Ⓒ Copyright 2022 Claiton Lemes. -->
 
