@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/99222756/207317647-1c517d05-a17f-4f25-bbf5-33cbb236e85e.jpg" width="100%"/><br>
 
-## CONFIGURAÇÕES
+## **Configurações**
 O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plataforma Greatpages. Copie e cole no menu de configurações da página `Javascript & CSS` 
 
 <br>
