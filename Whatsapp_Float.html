@@ -1,7 +1,6 @@
-<!-- Whatsapp Float for Greatpages v. 1.6.3 - Ⓒ Copyright 2022 Claiton Lemes. -->
+<!-- Whatsapp Float for Greatpages v. 2.0.0 - Ⓒ Copyright 2023 Claiton Lemes. -->
 
 <a target="_blank" href="https://wa.me/550000000000" class="float">
-  <!-- Define o link do seu Whatsapp -->
   <svg class="icon">
     <path
       d="M.33,48.33,3.06,35.62A23.67,23.67,0,0,1,0,24,24.06,24.06,0,0,1,24.12,0h0a23.95,23.95,0,1,1,0,47.89,24.33,24.33,0,0,1-11-2.61ZM13.7,41.08l.67.36a20.3,20.3,0,0,0,9.74,2.49A20,20,0,1,0,4,24a19.78,19.78,0,0,0,2.89,10.3l.41.68L5.52,43Z" />
@@ -11,30 +10,18 @@
 </a>
 
 <style>
-  
-  /* Configurações Globais de Estilo */
-
   :root {
-
     --icon-color: #ffffff;
-    /* Define a cor do ícone */
-    --icon-hover: #ffffff;
-    /* Define a cor do ícone ao clicar com o mouse */
-    --gradient: #2ECC71, #27AE5F;
-    /* Define a cor do background gradiente, para uma cor linear defina cores iguais */
+    --gradient-normal: #2ECC71, #27AE5F;
     --gradient-hover: #2ECC71, #2ECC71;
-    /* Define a cor do background gradiente ao clicar com o mouse, para uma cor linear defina cores iguais */
-    --pulse: #2ECC71;
-    /* Define a cor da animação pulse */
-    --velocidade: 2s;
-    /* Define a velocidade da animação pulse */
+    --pulse-color: #2ECC71;
   }
 
   .icon {
     width: 48px;
     height: 48px;
     transform: scale(0.6) translate(20%, 20%);
-    fill: var(--icon-color)
+    fill: var(--icon-color);
   }
 
   .float {
@@ -42,16 +29,11 @@
     cursor: pointer;
     width: 60px;
     height: 60px;
-    bottom: 60px;
-    right: 80px;
-    /* Define a posição left ou right */
-    transition: 2s;
-    background: linear-gradient(45deg, var(--gradient));
+    bottom: 30px;
+    right: 30px;
+    transition: background 2s;
+    background: linear-gradient(45deg, var(--gradient-normal));
     border-radius: 50px;
-    animation: pulse var(--velocidade) infinite;
-    -webkit-animation: pulse var(--velocidade) infinite;
-    -moz-animation: pulse var(--velocidade) infinite;
-    -o-animation: pulse var(--velocidade) infinite;
     z-index: 9000;
   }
 
@@ -60,57 +42,32 @@
   }
 
   .float:hover .icon {
-    fill: var(--icon-hover)
-  }
-
-  @-webkit-keyframes pulse {
-
-    0% {
-      -webkit-box-shadow: 0 0 0 0 var(--pulse)
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
-    }
-  }
-
-  @-o-keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 var(--pulse)
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
-    }
-  }
-
-  @-ms-keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 var(--pulse)
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
-    }
-  }
-
-  @-moz-keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 var(--pulse)
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
-    }
-  }
-
-  @keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 var(--pulse)
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
-    }
+    fill: var(--icon-color);
   }
 </style>
+
+<script>
+  const floatBtn = document.querySelector('.float');
+
+  function pulseAnimation() {
+    const animation = floatBtn.animate(
+      [
+        { boxShadow: `0 0 0 0 var(--pulse-color)` },
+        { boxShadow: `0 0 0 20px rgba(0, 200, 0, 0)` },
+      ],
+      {
+        duration: 2000,
+        easing: 'ease-out',
+        iterations: Infinity,
+      }
+    );
+
+    animation.addEventListener('iteration', (event) => {
+      if (event.elapsedTime > 0) {
+        floatBtn.style.boxShadow = '0 0 0 0 var(--pulse-color)';
+      }
+    });
+  }
+
+  pulseAnimation();
+</script>
