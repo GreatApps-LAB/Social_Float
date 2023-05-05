@@ -1,0 +1,34 @@
+:root {
+  --icon-color: #ffffff;
+  --gradient-normal: #2ecc71, #27ae5f;
+  --gradient-hover: #2ecc71, #2ecc71;
+  --pulse-color: #2ecc71;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  transform: scale(0.6) translate(20%, 20%);
+  fill: var(--icon-color);
+}
+
+.float {
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  transition: background 2s;
+  background: linear-gradient(45deg, var(--gradient-normal));
+  border-radius: 50px;
+  z-index: 9000;
+}
+
+.float:hover {
+  background: linear-gradient(45deg, var(--gradient-hover));
+}
+
+.float:hover .icon {
+  fill: var(--icon-color);
+}
