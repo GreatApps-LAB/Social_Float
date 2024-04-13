@@ -141,7 +141,7 @@ https://github.com/GreatApps-LAB/Social_Float/assets/99222756/feefc8f8-2acd-42d4
 
 ```CSS
 
-/*Instagram Float for Greatpages v. 2.0.0 - Ⓒ Copyright Claiton Lemes.*/
+/*Instagram Float for GreatPages v. 2.0.0 - Ⓒ Copyright Claiton Lemes.*/
 
 <a href="Instagram_Link" target="_blank" class="float" aria-label="Botão para contato no Instagram" role="button">
 <svg class="icon" aria-hidden="true" viewBox="0 0 18 18">
