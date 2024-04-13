@@ -1,34 +1,50 @@
 :root {
-  --icon-color: #ffffff;
-  --gradient-normal: #2ecc71, #27ae5f;
-  --gradient-hover: #2ecc71, #2ecc71;
-  --pulse-color: #2ecc71;
+  --icon: #ffffff;
+  --background: #00c800;
+  --background-hover: #009600;
+  --pulse: #00c800;
 }
 
 .icon {
-  width: 48px;
-  height: 48px;
-  transform: scale(0.6) translate(20%, 20%);
-  fill: var(--icon-color);
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: var(--icon);
+  stroke-width: 2;
+  stroke-miterlimit: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   cursor: pointer;
   width: 60px;
   height: 60px;
-  bottom: 30px;
-  right: 30px;
-  transition: background 2s;
-  background: linear-gradient(45deg, var(--gradient-normal));
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--background);
   border-radius: 50px;
-  z-index: 9000;
+  z-index: 1000000;
+  transition: background-color 1s;
+  animation: pulse 3s infinite;
 }
 
 .float:hover {
-  background: linear-gradient(45deg, var(--gradient-hover));
+  background-color: var(--background-hover);
 }
 
-.float:hover .icon {
-  fill: var(--icon-color);
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse);
+  }
+  50% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ffffff00;
+  }
 }

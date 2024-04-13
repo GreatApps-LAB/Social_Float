@@ -1,84 +1,71 @@
 # **GreatPages Whatsapp Float**
 
-<a href="https://www.buymeacoffee.com/claitonllemes" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/99222756/210368404-216273fb-c930-453e-b32b-e3614872eba3.png" width="100%"/></a><br>
 
-## **Configurações**
+### **Configurações**
+
 O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plataforma Greatpages. Copie e cole no menu de configurações da página.
 
-<br><a href="https://www.buymeacoffee.com/claitonllemes" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/99222756/210372197-a1d41894-8acc-470b-ac38-2bd1ee0a4ed9.png" width="100%"/></a><br>
 
 ```Html
-<!-- Whatsapp Float for Greatpages v. 2.0.0 - Ⓒ Copyright 2023 Claiton Lemes. -->
+/* Whatsapp Float for Greatpages v. 3.0.0 - Ⓒ Copyright Claiton Lemes. */
 
-<a target="_blank" href="https://wa.me/550000000000" class="float">
-  <svg class="icon">
-    <path
-      d="M.33,48.33,3.06,35.62A23.67,23.67,0,0,1,0,24,24.06,24.06,0,0,1,24.12,0h0a23.95,23.95,0,1,1,0,47.89,24.33,24.33,0,0,1-11-2.61ZM13.7,41.08l.67.36a20.3,20.3,0,0,0,9.74,2.49A20,20,0,1,0,4,24a19.78,19.78,0,0,0,2.89,10.3l.41.68L5.52,43Z" />
-    <path
-      d="M34.67,31.75C34.22,33,32,34.21,31,34.31S30,35.12,24.5,33s-9-7.77-9.27-8.13S13,21.92,13,19.27a6.08,6.08,0,0,1,1.89-4.5,2,2,0,0,1,1.45-.67c.36,0,.72.05,1,.05s.77-.18,1.22.9,1.54,3.72,1.67,4a1,1,0,0,1,.05.95,3.53,3.53,0,0,1-.54.89c-.28.32-.58.71-.82.95s-.55.56-.24,1.09a16.48,16.48,0,0,0,3,3.73,14.93,14.93,0,0,0,4.37,2.68c.54.26.86.22,1.17-.14s1.36-1.58,1.72-2.12.72-.45,1.22-.26,3.17,1.47,3.71,1.74.9.41,1,.63A4.4,4.4,0,0,1,34.67,31.75Z" />
-  </svg>
+<a href="https://api.whatsapp.com/send?phone=55XX000000000" target="_blank" class="float" aria-label="Botão para contato no WhatsApp" role="button">
+  <svg class="icon" aria-hidden="true" viewBox="0 0 22 23" > 
+    <path d="M7.68912 8.20891C7.57438 11.4876 9.83005 14.5469 13.9408 14.3726M8.80688 7.53476V8.73039C8.80688 9.03883 8.55646 9.28925 8.24798 9.28925C7.93954 9.28925 7.68912 9.03883 7.68912 8.73039V7.53476C7.68912 7.22632 7.93954 6.9759 8.24798 6.9759C8.55646 6.9759 8.80688 7.22632 8.80688 7.53476ZM14.5589 14.3726H13.3633C13.0549 14.3726 12.8045 14.1222 12.8045 13.8137C12.8045 13.5053 13.0549 13.2548 13.3633 13.2548H14.5589C14.8674 13.2548 15.1178 13.5053 15.1178 13.8137C15.1178 14.1222 14.8674 14.3726 14.5589 14.3726ZM11.1215 1C16.6111 1 21.0679 5.45681 21.0679 10.9464C21.0679 16.4359 16.6111 20.8927 11.1215 20.8927C9.77124 20.8927 8.48348 20.6231 7.30912 20.1348C4.675 20.5158 3.96776 20.6064 1 21C1.77356 19.1434 2.13579 18.3382 2.88292 16.5179C1.80505 14.9279 1.17515 13.0101 1.17515 10.9464C1.17515 5.45681 5.63196 1 11.1215 1Z"/>
+</svg>
 </a>
 
 <style>
   :root {
-    --icon-color: #ffffff;
-    --gradient-normal: #2ECC71, #27AE5F;
-    --gradient-hover: #2ECC71, #2ECC71;
-    --pulse-color: #2ECC71;
-  }
+  --icon: #ffffff;
+  --background: #00c800;
+  --background-hover: #009600;
+  --pulse: #00c800;
+}
 
-  .icon {
-    width: 48px;
-    height: 48px;
-    transform: scale(0.6) translate(20%, 20%);
-    fill: var(--icon-color);
-  }
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: var(--icon);
+  stroke-width: 2;
+  stroke-miterlimit: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
-  .float {
-    position: fixed;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
-    transition: background 2s;
-    background: linear-gradient(45deg, var(--gradient-normal));
-    border-radius: 50px;
-    z-index: 9000;
-  }
+.float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--background);
+  border-radius: 50px;
+  z-index: 1000000;
+  transition: background-color 1s;
+  animation: pulse 3s infinite;
+}
 
-  .float:hover {
-    background: linear-gradient(45deg, var(--gradient-hover));
-  }
+.float:hover {
+  background-color: var(--background-hover);
+}
 
-  .float:hover .icon {
-    fill: var(--icon-color);
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse);
   }
+  50% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ffffff00;
+  }
+}
+
 </style>
-
-<script>
-  const floatBtn = document.querySelector('.float');
-
-  function pulseAnimation() {
-    const animation = floatBtn.animate(
-      [
-        { boxShadow: `0 0 0 0 var(--pulse-color)` },
-        { boxShadow: `0 0 0 20px rgba(0, 200, 0, 0)` },
-      ],
-      {
-        duration: 2000,
-        easing: 'ease-out',
-        iterations: Infinity,
-      }
-    );
-
-    animation.addEventListener('iteration', (event) => {
-      if (event.elapsedTime > 0) {
-        floatBtn.style.boxShadow = '0 0 0 0 var(--pulse-color)';
-      }
-    });
-  }
-
-  pulseAnimation();
-</script>
 ```
