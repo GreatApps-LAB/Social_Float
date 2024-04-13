@@ -1,3 +1,4 @@
+# Social Float <br>
 > [!NOTE]
 > Os códigos abaixo representam botões flutuantes personalizados para plataformas de mensagens distintas — `WhatsApp, Telegram e Instagram`, criados para serem incorporados na plataforma do `GreatPages`.
 > Cada botão é projetado para facilitar o contato direto através da sua `Landing Page`, usando um link que direciona o usuário ao chat privado.
@@ -5,7 +6,7 @@
 
 > [!CAUTION]
 > Adicione somente um modelo por página.
-# Whatsapp Float Contact
+### Whatsapp Float Contact
 https://github.com/GreatApps-LAB/Social_Float/assets/99222756/10532cc8-85aa-4902-96d5-295972b11b93
 
 
@@ -72,10 +73,8 @@ https://github.com/GreatApps-LAB/Social_Float/assets/99222756/10532cc8-85aa-4902
   </style>
   ```
 
-
+### Telegram Float Contact
 https://github.com/GreatApps-LAB/Social_Float/assets/99222756/035c0802-8175-4295-8192-5364e9398f27
-
-<details><summary>Telegram Code</summary> <br>
 
 ```css
 
@@ -136,11 +135,9 @@ box-shadow: 0 0 0 0 #ffffff00;
 </style>
 
 ```
-</details>
+### Instagram Float Contact
 
 https://github.com/GreatApps-LAB/Social_Float/assets/99222756/feefc8f8-2acd-42d4-9693-f301b24e80d8
-
-<details><summary>Instagram Code</summary> <br>
 
 ```CSS
 
@@ -202,4 +199,3 @@ box-shadow: 0 0 0 0 #ffffff00;
 }
 </style>
 ```
-</details>
