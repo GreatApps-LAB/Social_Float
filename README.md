@@ -1,4 +1,4 @@
-# **GreatPages Social Float Contact**
+# **Social Float Contact**
 
 Os códigos abaixo representam botões flutuantes personalizados para plataformas de mensagens distintas — `WhatsApp, Telegram e Instagram`, criados para serem incorporados na plataforma do `GreatPages`.
 
