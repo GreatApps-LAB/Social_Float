@@ -6,9 +6,9 @@
 
 > [!CAUTION]
 > Adicione somente um modelo por página.
-### Whatsapp Float Contact
-https://github.com/GreatApps-LAB/Social_Float/assets/99222756/10532cc8-85aa-4902-96d5-295972b11b93
 
+### Whatsapp Float Contact
+https://github.com/GreatApps-LAB/Social_Float/assets/99222756/49ddb2c7-9b70-4194-b41f-b652caa70adc
 
   ```css
   /* Whatsapp Float for GreatPages v. 3.0.2 - Ⓒ Copyright Claiton Lemes. */
