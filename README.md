@@ -75,6 +75,8 @@ https://github.com/GreatApps-LAB/Social_Float/assets/99222756/10532cc8-85aa-4902
 
 </details>
 
+https://github.com/GreatApps-LAB/Social_Float/assets/99222756/035c0802-8175-4295-8192-5364e9398f27
+
 <details><summary>Telegram Code</summary> <br>
 
 ```css
@@ -137,6 +139,8 @@ box-shadow: 0 0 0 0 #ffffff00;
 
 ```
 </details>
+
+https://github.com/GreatApps-LAB/Social_Float/assets/99222756/feefc8f8-2acd-42d4-9693-f301b24e80d8
 
 <details><summary>Instagram Code</summary> <br>
 
