@@ -1,6 +1,7 @@
-# **GreatPages Whatsapp Float**
+# **GreatPages Social Float Contact**
 
-### **Configurações**
+### **Whatsapp**
+
 
 O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plataforma Greatpages. Copie e cole no menu de configurações da página.
 
@@ -66,4 +67,76 @@ O código abaixo adiciona um botão flutuante do Whatsapp a uma página na plata
 }
 
 </style>
+```
+
+
+### **Telegram**
+
+```CSS
+
+/* Telegram Float for GreatPages v. 3.0.0 - Ⓒ Copyright Claiton Lemes. */
+
+<a href="Telegram_Link" target="_blank" class="float" aria-label="Botão para contato no Telegram" role="button">
+  <svg class="icon" aria-hidden="true" viewBox="0 0 50 40" >
+<path
+      d="M0,17.46A3.22,3.22,0,0,1,1.87,16q4.62-1.8,9.26-3.56L42.84.25A3.55,3.55,0,0,1,43.61,0,2,2,0,0,1,46,2.18a17.08,17.08,0,0,1-.45,2.91Q42.3,20.44,39,35.77a6.38,6.38,0,0,1-.53,1.52,1.79,1.79,0,0,1-2.27,1,4.87,4.87,0,0,1-1.36-.65c-3.3-2.39-6.58-4.8-9.87-7.21l-.42-.31c-.13.12-.26.22-.37.33l-5,4.81a2.46,2.46,0,0,1-1.83.75c0-.65.08-1.29.13-1.92.2-2.81.39-5.62.61-8.43a1,1,0,0,1,.3-.59Q27.9,16.42,37.47,7.84s.1-.07.13-.12L38,7.05a2.48,2.48,0,0,0-.82-.14,2.47,2.47,0,0,0-.89.41q-11.9,7.42-23.8,14.87a.85.85,0,0,1-.64.11Q6.73,20.76,1.68,19.17A2.72,2.72,0,0,1,0,18Z" />
+</svg>
+</a>
+
+<style>
+  :root {
+  --icon: #ffffff;
+  --background: #0088cc;
+  --background-hover: #006395;
+  --pulse: #0088cc;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--icon);
+  
+
+}
+
+.float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--background);
+  border-radius: 50px;
+  z-index: 1000000;
+  transition: background-color 1s;
+  animation: pulse 3s infinite;
+}
+
+.float:hover {
+  background-color: var(--background-hover);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse);
+  }
+  50% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ffffff00;
+  }
+}
+</style>
+
+```
+
+### **Instagram**
+
+```
+
 ```
