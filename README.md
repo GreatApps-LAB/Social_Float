@@ -1,8 +1,15 @@
 # **GreatPages Social Float Contact**
 
+Os códigos abaixo representam botões flutuantes personalizados para plataformas de mensagens distintas — `WhatsApp, Telegram e Instagram`, criados para serem incorporados na plataforma do `GreatPages`. 
+
+Cada botão é projetado para facilitar o contato direto através da sua `Landing Page`, usando um link que direciona o usuário ao chat privado. 
+
+Os ícones são incorporados como `gráficos vetoriais escaláveis (SVG)` para manter a clareza em diferentes resoluções de tela. Já os botões são animados com um efeito de pulsação e alteram a cor de fundo quando o mouse é passado sobre eles, melhorando a interatividade e atração visual.
+
+
 ### **Whatsapp**
 
-O código abaixo adiciona um botão flutuante a uma página na plataforma Greatpages. Copie e cole no menu de configurações da página.
+
 
 ```css
 /* Whatsapp Float for GreatPages v. 3.0.1 - Ⓒ Copyright Claiton Lemes. */
@@ -13,6 +20,7 @@ O código abaixo adiciona um botão flutuante a uma página na plataforma Greatp
     <path d="M7.68912 8.20891C7.57438 11.4876 9.83005 14.5469 13.9408 14.3726M8.80688 7.53476V8.73039C8.80688 9.03883 8.55646 9.28925 8.24798 9.28925C7.93954 9.28925 7.68912 9.03883 7.68912 8.73039V7.53476C7.68912 7.22632 7.93954 6.9759 8.24798 6.9759C8.55646 6.9759 8.80688 7.22632 8.80688 7.53476ZM14.5589 14.3726H13.3633C13.0549 14.3726 12.8045 14.1222 12.8045 13.8137C12.8045 13.5053 13.0549 13.2548 13.3633 13.2548H14.5589C14.8674 13.2548 15.1178 13.5053 15.1178 13.8137C15.1178 14.1222 14.8674 14.3726 14.5589 14.3726ZM11.1215 1C16.6111 1 21.0679 5.45681 21.0679 10.9464C21.0679 16.4359 16.6111 20.8927 11.1215 20.8927C9.77124 20.8927 8.48348 20.6231 7.30912 20.1348C4.675 20.5158 3.96776 20.6064 1 21C1.77356 19.1434 2.13579 18.3382 2.88292 16.5179C1.80505 14.9279 1.17515 13.0101 1.17515 10.9464C1.17515 5.45681 5.63196 1 11.1215 1Z"/></svg></a>
 
 <style>
+
   :root {
   --icon: #ffffff;
   --background: #00c800;
@@ -134,7 +142,7 @@ O código abaixo adiciona um botão flutuante a uma página na plataforma Greatp
 
 /*Instagram Float for Greatpages v. 2.0.0 - Ⓒ Copyright Claiton Lemes.*/
 
-<a target="_blank" href="LINKAQUI" class="float" aria-label="Botão para contato no Instagram" role="button">
+<a href="Instagram_Link" target="_blank" class="float" aria-label="Botão para contato no Instagram" role="button">
   <svg class="icon" aria-hidden="true" viewBox="0 0 18 18">
     <path
       d="M5 2C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V13C2 13.7956 2.31607 14.5587 2.87868 15.1213C3.44129 15.6839 4.20435 16 5 16H13C13.7956 16 14.5587 15.6839 15.1213 15.1213C15.6839 14.5587 16 13.7956 16 13V5C16 4.20435 15.6839 3.44129 15.1213 2.87868C14.5587 2.31607 13.7956 2 13 2H5ZM1.46447 1.46447C2.40215 0.526784 3.67392 0 5 0H13C14.3261 0 15.5979 0.526784 16.5355 1.46447C17.4732 2.40215 18 3.67392 18 5V13C18 14.3261 17.4732 15.5979 16.5355 16.5355C15.5979 17.4732 14.3261 18 13 18H5C3.67392 18 2.40215 17.4732 1.46447 16.5355C0.526784 15.5979 0 14.3261 0 13V5C0 3.67392 0.526784 2.40215 1.46447 1.46447ZM13.5 3.5C14.0523 3.5 14.5 3.94772 14.5 4.5V4.51C14.5 5.06228 14.0523 5.51 13.5 5.51C12.9477 5.51 12.5 5.06228 12.5 4.51V4.5C12.5 3.94772 12.9477 3.5 13.5 3.5ZM6.17157 6.17157C6.92172 5.42143 7.93913 5 9 5C10.0609 5 11.0783 5.42143 11.8284 6.17157C12.5786 6.92172 13 7.93913 13 9C13 10.0609 12.5786 11.0783 11.8284 11.8284C11.0783 12.5786 10.0609 13 9 13C7.93913 13 6.92172 12.5786 6.17157 11.8284C5.42143 11.0783 5 10.0609 5 9C5 7.93913 5.42143 6.92172 6.17157 6.17157ZM9 7C8.46957 7 7.96086 7.21071 7.58579 7.58579C7.21071 7.96086 7 8.46957 7 9C7 9.53043 7.21071 10.0391 7.58579 10.4142C7.96086 10.7893 8.46957 11 9 11C9.53043 11 10.0391 10.7893 10.4142 10.4142C10.7893 10.0391 11 9.53043 11 9C11 8.46957 10.7893 7.96086 10.4142 7.58579C10.0391 7.21071 9.53043 7 9 7Z"
