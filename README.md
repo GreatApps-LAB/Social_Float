@@ -40,7 +40,7 @@ role="button"
 --background-hover: #009600;
 --pulse: #00c800;
 --pulse-duration: 3s;
---transition-duration: 0.2s;
+--transition-duration: 0.5s;
 }
 
 .icon {
@@ -210,9 +210,10 @@ https://github.com/GreatApps-LAB/Social_Float/assets/99222756/feefc8f8-2acd-42d4
   --gradient-normal: #e9a61d, #ef3738, #9d24ce;
   --gradient-hover: #cb8f17, #bc2323, #721597;
   --pulse: #ef3738;
+  --pulse-speed: 3s;
   --icon-hover-speed: 0.5s;
   --background-hover-speed: 0.5s;
-  --pulse-speed: 3s;
+  
 }
 
 .icon {
