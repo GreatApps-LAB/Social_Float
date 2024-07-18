@@ -1,0 +1,58 @@
+:root {
+  --icon: #ffffff;
+  --icon-hover: #ffffff;
+  --background: #0088cc;
+  --background-hover: #006395;
+  --pulse: #0088cc;
+  --pulse-duration: 3s;
+  --icon-hover-duration: 0.5s;
+  --background-hover-duration: 0.5s;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: var(--icon);
+  transition: fill var(--icon-hover-duration);
+  margin-top: 0px;
+  margin-left: -4px;
+}
+
+.telegram-float {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--background);
+  border-radius: 50px;
+  z-index: 1000000;
+  transition: background-color var(--background-hover-duration);
+  animation: pulse var(--pulse-duration) infinite;
+}
+
+.telegram-float:hover {
+  background-color: var(--background-hover);
+}
+
+.telegram-float:hover .icon {
+  fill: var(--icon-hover);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--pulse);
+  }
+
+  50% {
+    box-shadow: 0 0 0 20px #ffffff00;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #ffffff00;
+  }
+}
